@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+html {
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+body {
+    background: transparent !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.progress-container {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 5;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 20%;
+    position: fixed;
+	/*Change Height*/
+    bottom: 7%;
+	/*Change Height*/
+    left: 42%;
+}
+
+.progress-labels {
+    width: 100%;
+    top: 12px;
+    height: 20px;
+    text-align: center;
+    position: absolute;
+    display: inline-block;
+    white-space: nowrap;
+    margin-top: -0.2%;
+}
+
+.progress-labels div {
+    color: #E6E6E5;
+    width: 80%;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1.0px;
+    text-shadow: 1px 1px 1px rgba(1, 1, 1, 0);
+    position: absolute;
+    z-index: 99;
+    opacity: 1;
+    margin-top: -2px;
+    font-weight: 0;
+    font-size: 11px;
+}
+
+.progress-bar-container {
+    width: 80%;
+    height: 2%;
+    margin-left: 2px;
+    margin-right: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0px solid #e6e6e500;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000; margin: 5px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 25px;
+    opacity: 0.6;
+    background-size: 20px 20px;
+    /*background: #c09506;*/
+    background: linear-gradient(-90deg, #ff0047 0%, #ff0047 100%);
+}
